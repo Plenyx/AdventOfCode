@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -6,9 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="AoCInputLoader">
-      <HintPath>..\AoCInputLoader.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\AoCInputLoader\AoCInputLoader.csproj" />
   </ItemGroup>
 
 </Project>
