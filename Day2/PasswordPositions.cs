@@ -16,13 +16,7 @@ namespace Day2
 
         override public bool IsValid
         {
-            get
-            {
-                return
-                    (PasswordText[Position1Index].Equals(Character) && !PasswordText[Position2Index].Equals(Character))
-                    ||
-                    (!PasswordText[Position1Index].Equals(Character) && PasswordText[Position2Index].Equals(Character));
-            }
+            get => PasswordText[Position1Index].Equals(Character) ^ PasswordText[Position2Index].Equals(Character);
         }
 
         public static PasswordPositions ParseInput(string inputLine)
