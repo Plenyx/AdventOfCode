@@ -3,7 +3,7 @@ using System.IO;
 using System.Linq;
 using System.Collections.Generic;
 
-namespace AoCInputLoader
+namespace AoCHelperClasses
 {
     public static class InputLoader
     {

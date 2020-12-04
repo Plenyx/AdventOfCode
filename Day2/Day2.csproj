@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AoCInputLoader\AoCInputLoader.csproj" />
+    <ProjectReference Include="..\AoCInputLoader\AoCHelperClasses.csproj" />
   </ItemGroup>
 
 </Project>
