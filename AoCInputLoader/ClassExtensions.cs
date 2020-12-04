@@ -5,9 +5,9 @@ namespace AoCHelperClasses
 {
     public static class ClassExtensions
     {
-        public static bool DoesMatchPattern(this String haystack, string pattern)
+        public static bool DoesMatchExactPattern(this String haystack, string pattern)
         {
-            var regex = new Regex(pattern, RegexOptions.Multiline);
+            var regex = new Regex($"^({pattern})$", RegexOptions.Multiline);
             return regex.IsMatch(haystack);
         }
     }

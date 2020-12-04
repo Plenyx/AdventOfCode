@@ -42,7 +42,7 @@ namespace Day4
         {
             get
             {
-                return BirthYear.DoesMatchPattern(@"^([1,2]((00[0-2])|(9[2-9]\d)))$");
+                return BirthYear.DoesMatchExactPattern(@"(200[0-2])|(19[2-9]\d)");
             }
         }
 
@@ -50,7 +50,7 @@ namespace Day4
         {
             get
             {
-                return IssueYear.DoesMatchPattern(@"^(20((20)|(1\d)))$");
+                return IssueYear.DoesMatchExactPattern(@"20((20)|(1\d))");
             }
         }
 
@@ -58,7 +58,7 @@ namespace Day4
         {
             get
             {
-                return IssueYear.DoesMatchPattern(@"^(20((30)|(2\d)))$");
+                return ExpirationYear.DoesMatchExactPattern(@"20((30)|(2\d))");
             }
         }
 
@@ -66,7 +66,7 @@ namespace Day4
         {
             get
             {
-                return Height.DoesMatchPattern(@"^((((1[5-8]\d)|(19[0-3]))cm)|(((59)|(6\d)|(7[0-6]))in))$");
+                return Height.DoesMatchExactPattern(@"(((1[5-8]\d)|(19[0-3]))cm)|(((59)|(6\d)|(7[0-6]))in)");
             }
         }
 
@@ -74,7 +74,7 @@ namespace Day4
         {
             get
             {
-                return HairColour.DoesMatchPattern(@"^(#(\d|[a-f]){6})$");
+                return HairColour.DoesMatchExactPattern(@"#(\d|[a-f]){6}");
             }
         }
 
@@ -82,7 +82,7 @@ namespace Day4
         {
             get
             {
-                return EyeColour.DoesMatchPattern(@"^((amb)|(blu)|(brn)|(gry)|(grn)|(hzl)|(oth))$");
+                return EyeColour.DoesMatchExactPattern(@"(amb)|(blu)|(brn)|(gry)|(grn)|(hzl)|(oth)");
             }
         }
 
@@ -90,7 +90,7 @@ namespace Day4
         {
             get
             {
-                return PassportID.DoesMatchPattern(@"^(\d{9})$");
+                return PassportID.DoesMatchExactPattern(@"\d{9}");
             }
         }
 
