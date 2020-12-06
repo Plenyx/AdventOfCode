@@ -35,6 +35,7 @@ namespace Day5
                         throw new NotImplementedException();
                 }
             }
+            // column
             int columnBelow = 0;
             int columnUpper = 7;
             foreach (var character in input[7..])
