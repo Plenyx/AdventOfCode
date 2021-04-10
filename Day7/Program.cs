@@ -15,8 +15,8 @@ namespace Day7
 
         static void Main(string[] args)
         {
-            var list = InputLoader.GetInputAsList("input.txt");
-            BagDict = list
+            var input = InputLoader.GetInputAsList("input.txt");
+            BagDict = input
                 .Select(x => new Bag(x))
                 .ToDictionary(x => x.Name, x => x);
             var prepareParentsList = BagDict
