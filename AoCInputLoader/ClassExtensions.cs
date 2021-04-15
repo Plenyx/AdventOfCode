@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
@@ -12,7 +13,23 @@ namespace AoCHelperClasses
             return regex.IsMatch(haystack);
         }
 
-        public static void AddRangeUnique(this List<string> list, List<string> toAdd)
+        public static void AddUnique<T>(this ICollection<T> list, T toAdd)
+        {
+            if (!list.Contains(toAdd))
+            {
+                list.Add(toAdd);
+            }
+        }
+
+        public static void AddUnique(this List<SortedSet<int>> list, SortedSet<int> toAdd)
+        {
+            if (!list.Where(x => x.SetEquals(toAdd)).Any())
+            {
+                list.Add(toAdd);
+            }
+        }
+
+        public static void AddRangeUnique<T>(this ICollection<T> list, ICollection<T> toAdd)
         {
             foreach(var add in toAdd)
             {
