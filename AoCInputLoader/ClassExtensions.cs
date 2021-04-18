@@ -13,6 +13,8 @@ namespace AoCHelperClasses
             return regex.IsMatch(haystack);
         }
 
+        public static int ToInt(this bool booleanValue) => booleanValue ? 1 : 0;
+
         public static void AddUnique<T>(this ICollection<T> list, T toAdd)
         {
             if (!list.Contains(toAdd))
@@ -21,7 +23,7 @@ namespace AoCHelperClasses
             }
         }
 
-        public static void AddUnique(this List<SortedSet<int>> list, SortedSet<int> toAdd)
+        public static void AddUnique(this ICollection<ISet<int>> list, ISet<int> toAdd)
         {
             if (!list.Where(x => x.SetEquals(toAdd)).Any())
             {

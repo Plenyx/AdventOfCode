@@ -33,6 +33,6 @@ namespace AoCHelperClasses
             return generatedList;
         }
 
-        public static List<int> GetInputAsNumberList(string filename) => GetInputAsList(filename).Cast<int>().ToList();
+        public static List<int> GetInputAsNumberList(string filename) => GetInputAsList(filename).Select(x => int.Parse(x)).ToList();
     }
 }
