@@ -7,6 +7,8 @@
 
 var input = Shared.LoadFromFileAsSpan("input.txt");
 
+Shared.StartExecutionTimer();
+
 var points = 0;
 
 foreach (ReadOnlySpan<char> line in input)
@@ -54,5 +56,7 @@ foreach (ReadOnlySpan<char> line in input)
 }
 
 Console.WriteLine($"The solution for part 2 is: {points} points");
+
+Shared.StopAndWriteExecutionTimer();
 
 Console.ReadLine();
