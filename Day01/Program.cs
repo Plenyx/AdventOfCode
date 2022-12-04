@@ -2,6 +2,8 @@
 
 var input = Shared.LoadFromFileAsSpan("input.txt");
 
+Shared.StartExecutionTimer();
+
 var currentElf = 0;
 
 var elfs = new List<int>();
@@ -28,4 +30,7 @@ var top3 = elfs.OrderByDescending(x => x).Take(3).ToArray();
 
 Console.WriteLine($"The solution for part 1 is: {top3[0]} calories");
 Console.WriteLine($"The solution for part 2 is: {top3.Sum()} calories");
+
+Shared.StopAndWriteExecutionTimer();
+
 Console.ReadLine();

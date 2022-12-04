@@ -1,7 +1,8 @@
 ﻿using SharedLibs;
-using System;
 
 var input = Shared.LoadFromFileAsSpan("input.txt");
+
+Shared.StartExecutionTimer();
 
 var priorityNumber = 0;
 
@@ -41,5 +42,6 @@ for (int i = 0; i < input.Length; i += 3)
 
 Console.WriteLine($"The solution for part 2: {priorityNumber} priority points");
 
+Shared.StopAndWriteExecutionTimer();
 
 Console.ReadLine();
