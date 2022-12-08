@@ -26,12 +26,8 @@ foreach (ReadOnlySpan<char> line in input)
                 continue;
             }
             currentDirectory = currentDirectory?.GetOrCreateSubdirectory(line[5..]);
-            continue;
         }
-        if ((line[2] == 'l') && (line[3] == 's'))
-        {
-            continue;
-        }
+        continue;
     }
     if (line[0] == 'd')
     {
