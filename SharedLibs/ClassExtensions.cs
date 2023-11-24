@@ -3,7 +3,7 @@ using System.Text.RegularExpressions;
 
 namespace SharedLibs
 {
-    internal static class ClassExtensions
+    public static class ClassExtensions
     {
         public static ReadOnlySpan<T> AsSpan<T>(this List<T> list)
         {
