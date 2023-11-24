@@ -5,11 +5,11 @@
         public Vector2D Head { get; internal set; }
         public Vector2D Tail { get; internal set; }
 
-        public Rope? NextRope { get; internal set; }
+        public Rope NextRope { get; internal set; }
 
         public bool IsHeadTouchningTail => Head.DistanceFrom(Tail) <= 1;
 
-        public void PerformStep(Vector2D direction, HashSet<Vector2D>? tailPart1Positions, HashSet<Vector2D> tailPart2Positions)
+        public void PerformStep(Vector2D direction, HashSet<Vector2D> tailPart1Positions, HashSet<Vector2D> tailPart2Positions)
         {
             var previousHead = Head;
             Head = Head.Add(direction);
