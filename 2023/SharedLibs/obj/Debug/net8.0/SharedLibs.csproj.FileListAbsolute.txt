@@ -1,0 +1,11 @@
+D:\Hs projects\AdventOfCode\SharedLibs\bin\Debug\net8.0\SharedLibs.deps.json
+D:\Hs projects\AdventOfCode\SharedLibs\bin\Debug\net8.0\SharedLibs.dll
+D:\Hs projects\AdventOfCode\SharedLibs\bin\Debug\net8.0\SharedLibs.pdb
+D:\Hs projects\AdventOfCode\SharedLibs\obj\Debug\net8.0\SharedLibs.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hs projects\AdventOfCode\SharedLibs\obj\Debug\net8.0\SharedLibs.AssemblyInfoInputs.cache
+D:\Hs projects\AdventOfCode\SharedLibs\obj\Debug\net8.0\SharedLibs.AssemblyInfo.cs
+D:\Hs projects\AdventOfCode\SharedLibs\obj\Debug\net8.0\SharedLibs.csproj.CoreCompileInputs.cache
+D:\Hs projects\AdventOfCode\SharedLibs\obj\Debug\net8.0\SharedLibs.dll
+D:\Hs projects\AdventOfCode\SharedLibs\obj\Debug\net8.0\refint\SharedLibs.dll
+D:\Hs projects\AdventOfCode\SharedLibs\obj\Debug\net8.0\SharedLibs.pdb
+D:\Hs projects\AdventOfCode\SharedLibs\obj\Debug\net8.0\ref\SharedLibs.dll
